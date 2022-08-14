@@ -5,6 +5,8 @@ import { ReactComponent as CrownLogo } from '../../assets/crown.svg';
 import { UserContext } from "../../contexts/userContext.component";
 import { signUserOut } from "../../utilities/firebase/firebase.utilities";
 
+import CartIcon from "../../components/cart-icon/cart-icon.component";
+
 import './navigation.styles.scss'
 
 const Navigation = () => {
@@ -23,6 +25,7 @@ const Navigation = () => {
           : 
             ( <Link className="nav-link" to='/auth'>SIGN IN</Link> )
           }
+          <CartIcon />
         </div>
       </div>
       <Outlet />
