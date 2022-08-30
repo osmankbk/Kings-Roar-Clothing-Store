@@ -1,4 +1,4 @@
-import CategoryManu from '../../components/category-menu/category-manu.component';
+import Directory from '../../components/directory/directory.component';
 
 const Home = () => {
 
@@ -30,7 +30,7 @@ const Home = () => {
     }
   ]
   return (
-    <CategoryManu 
+    <Directory 
       categories={ categories }
     />
   );
